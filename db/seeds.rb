@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Creating plants...'
-Restaurant.create!({
+Plant.create!({
   name: "Le Dindon en Laisse",
   description: "18 Rue Beautreillis, 75004 Paris, France"
 })
-Restaurant.create!({
+Plant.create!({
   name: "Neuf et Voisins",
   description: "Van Arteveldestraat 1, 1000 Brussels, Belgium"
 })

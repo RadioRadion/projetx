@@ -1,6 +1,6 @@
 class PlantsController < ApplicationController
-
   def index
+    @plants = Plant.all
   end
 
   def new
@@ -10,6 +10,7 @@ class PlantsController < ApplicationController
   end
 
   def edit
+    @plant = Plant.find(params[:id])
   end
 
   def update
@@ -17,5 +18,4 @@ class PlantsController < ApplicationController
 
   def delete
   end
-
 end
