@@ -4,8 +4,11 @@
     <h1><%= plant.name %></h1>
     <h2><%= plant.description%></h2>
     <%= link_to "edit", edit_plant_path(plant) %>
+    <%= link_to "delete", plant_path(plant),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
     <%# link_to "delete", plant_path %>
   </div>
 <% end %>
-<% link_to "new", new_plant_path %>
+<%= link_to "new", new_plant_path %>
 </div>
